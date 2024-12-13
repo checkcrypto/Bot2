@@ -1,4 +1,3 @@
-random
 requests
 mnemonic
 bip32utils
