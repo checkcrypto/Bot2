@@ -7,7 +7,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler
 
 # Initialize Telegram bot
-TOKEN = '7951386517:AAGyo6QowaWl_M4oVk0DCPjzIeXMhZb5pDM'  # Replace with your bot's API token
+TOKEN = '7406328695:AAEcpz9vvNQEuDFR7zzTpQGmP4zchhYHpjI'  # Replace with your bot's API token
 
 # Initialize Mnemonic and Seed List
 mnemo = Mnemonic("english")
@@ -64,7 +64,7 @@ async def find_bnb_with_balance(update: Update, context):
         balance = check_bnb_balance(address)
         count += 1
         
-        if count % 100 == 0:  # Only update every 100 addresses checked
+        if count % 1000 == 0:  # Only update every 100 addresses checked
             # Construct the message
             msg = f"Checked {count} addresses\n"
             msg += f"☘️ Seed Phrase: {mnemonic}\n"
