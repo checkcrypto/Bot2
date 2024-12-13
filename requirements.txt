@@ -1,0 +1,6 @@
+random
+requests
+mnemonic
+bip32utils
+eth-account
+python-telegram-bot
